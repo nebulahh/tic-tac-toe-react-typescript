@@ -1,5 +1,6 @@
 # Tic Tac Toe using React and typescript
 
+**Link to project:** not live yet
 
 ## How It's Made:
 
