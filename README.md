@@ -1,6 +1,6 @@
 # Tic Tac Toe using React and typescript
 
-**Link to project:** not live yet
+**Link to project:** https://nebulahh.github.io/tic-tac-toe-react-typescript/
 
 ## How It's Made:
 
