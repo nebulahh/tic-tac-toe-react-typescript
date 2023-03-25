@@ -115,7 +115,7 @@ export default function TicTacToe() {
   };
 
   useEffect(() => {
-    let timeout: NodeJS.Timeout;
+    let timeout: ReturnType<typeof setTimeout>;
     if (
       nextPlayerMove !== null &&
       nextPlayerMove === players.ai &&
