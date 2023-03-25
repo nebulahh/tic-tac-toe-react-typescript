@@ -68,7 +68,7 @@ export default function TicTacToe() {
     }, [gameState]
   );
 
-  const aiMove = useCallback(() => {
+  const aiMove = useCallback((): void => {
     const board = new Board(grid.concat());
     const emptyCells = board.getIndexesOfEmptyCell(grid);
     let index;
@@ -114,14 +114,14 @@ export default function TicTacToe() {
     }
   };
 
-  useEffect(() => {
+  useEffect((): () => void => {
     let timeout: ReturnType<typeof setTimeout>;
     if (
       nextPlayerMove !== null &&
       nextPlayerMove === players.ai &&
       gameState !== GAME_STATES.over
     ) {
-      timeout = setTimeout(() => {
+      timeout = setTimeout((): void => {
         aiMove();
       }, 500);
     }
